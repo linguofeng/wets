@@ -13,6 +13,8 @@ const wxss = filename =>
 
 export default {
   entry: './src/index.ts',
+  mode: 'development',
+  devtool: 'none',
   module: {
     rules: [
       {
@@ -41,10 +43,6 @@ export default {
           },
           {
             loader: require.resolve('css-loader'),
-            options: {
-              importLoaders: 1,
-              minimize: true,
-            },
           },
           {
             loader: require.resolve('postcss-loader'),
@@ -69,10 +67,6 @@ export default {
           },
           {
             loader: require.resolve('css-loader'),
-            options: {
-              importLoaders: 1,
-              minimize: true,
-            },
           },
           {
             loader: require.resolve('postcss-loader'),

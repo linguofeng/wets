@@ -15,6 +15,8 @@ export class HomePage extends Page {
   }
 
   render() {
-    return <view bindtap={this.onTap} />;
+    return <view bindtap={this.onTap}>
+      <text>hello</text>
+    </view>;
   }
 }

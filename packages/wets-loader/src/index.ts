@@ -149,7 +149,7 @@ module.exports = function(source) {
     const { className, decorator } = parser('Conf')(sourceFile);
 
     const config = decorator ? decorator.args : {};
-    const pages = getPages(this.options.entry);
+    const pages = getPages(this._compilation.options.entry);
     this.emitFile(
       'app.json',
       JSON.stringify(
@@ -184,7 +184,7 @@ module.exports = function(source) {
     }
 
     // 生成`app.js`
-    const libPath = relativePath(cwd, this.options.output.filename).slice(3);
+    const libPath = relativePath(cwd, this._compilation.options.output.filename).slice(3);
     this.emitFile('app.js', genCode('App', className, libPath));
 
     // 删除@App.Conf({...})
@@ -211,7 +211,7 @@ module.exports = function(source) {
     }
 
     // 生成`page.js`文件
-    const libPath = relativePath(pagePath, this.options.output.filename).slice(
+    const libPath = relativePath(pagePath, this._compilation.options.output.filename).slice(
       3,
     );
     this.emitFile(`${pagePath}.js`, genCode('Page', className, libPath));

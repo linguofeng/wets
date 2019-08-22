@@ -13,9 +13,6 @@
   "files": [
     "dist"
   ],
-  "devDependencies": {
-    "jest": "^20.0.4"
-  },
   "dependencies": {
     "redux": "^4.0.4"
   },
