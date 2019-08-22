@@ -1,0 +1,11 @@
+{
+  "name": "wets-types",
+  "version": "1.0.0",
+  "description": "wets types",
+  "main": "",
+  "author": "林国锋 <linguofeng@msn.com>",
+  "license": "MIT",
+  "scripts": {
+    "prettier": "prettier --write ./**/*.ts"
+  }
+}
