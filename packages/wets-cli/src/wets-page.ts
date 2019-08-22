@@ -8,7 +8,6 @@ import { createPage, Tpl, deletePage } from './lib';
 
 const { red, green } = chalk;
 
-// tslint:disable-next-line:no-var-requires
 const packageJson = require('../package.json');
 const root = process.cwd();
 const ownPath = path.join(root, 'node_modules', packageJson.name);

@@ -70,7 +70,6 @@ const defaultMapOptionsToOptions = (
 const defaultMapPropsToProps = ({ ownOptions, ...props }) => props;
 
 const defaultStore = {
-  // tslint:disable-next-line:no-empty
   dispatch: () => {},
 };
 
@@ -193,9 +192,7 @@ export function graphql(
             },
           );
         }
-        // tslint:disable-next-line:no-string-literal
         if (super['onLoad']) {
-          // tslint:disable-next-line:no-string-literal
           super['onLoad'](ownOptions);
         }
       }

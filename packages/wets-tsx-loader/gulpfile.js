@@ -10,6 +10,6 @@ gulp.task('build', () => {
 });
 
 
-gulp.task('build:watch', ['build'], () => {
+gulp.task('build:watch', gulp.series('build', () => {
   gulp.watch('src/*.ts', ['build']);
-});
+}));

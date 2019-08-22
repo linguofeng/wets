@@ -134,7 +134,6 @@ function setGlobalConst(node: any, st: any, c: any) {
             path.dirname(st.filePath),
             getValue(e, 'init.arguments.0.value') + '.tsx',
           );
-          // tslint:disable-next-line:no-empty
         } catch (e) {}
         try {
           component = fs.readFileSync(
@@ -147,10 +146,8 @@ function setGlobalConst(node: any, st: any, c: any) {
             path.dirname(st.filePath),
             getValue(e, 'init.arguments.0.value') + '/index.tsx',
           );
-          // tslint:disable-next-line:no-empty
         } catch (e) {}
         if (!component) {
-          // tslint:disable-next-line:no-console
           console.error(
             'can not find ',
             e.id.name,

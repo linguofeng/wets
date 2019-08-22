@@ -9,7 +9,6 @@ import * as spawn from 'cross-spawn';
 
 const { cyan, green, red } = chalk;
 
-// tslint:disable-next-line:no-var-requires
 const packageJson = require('../package.json');
 
 let projectName;

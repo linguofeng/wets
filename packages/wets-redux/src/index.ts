@@ -1,4 +1,3 @@
-/* tslint:disable:no-string-literal */
 import { Store, Unsubscribe } from 'redux';
 import { App, Page } from 'wets';
 
