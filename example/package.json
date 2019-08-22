@@ -1,0 +1,23 @@
+{
+  "name": "example",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@types/node": "^8.0.57",
+    "redux": "^4.0.4",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "tslib": "^1.8.1",
+    "wets": "^1.0.0",
+    "wets-cli": "^1.0.0",
+    "wets-graphql": "^1.0.0",
+    "wets-redux": "^1.0.0",
+    "wets-types": "^1.0.0",
+    "wets-wx-extra": "^1.0.0"
+  },
+  "scripts": {
+    "start": "wets start",
+    "build": "wets build",
+    "build:prod": "wets build -p"
+  }
+}
