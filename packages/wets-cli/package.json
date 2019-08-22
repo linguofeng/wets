@@ -1,0 +1,50 @@
+{
+  "name": "wets-cli",
+  "version": "1.0.0",
+  "license": "MIT",
+  "bin": {
+    "wets": "dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/linguofeng/wets.git",
+    "directory": "packages/wets-cli"
+  },
+  "files": [
+    "dist",
+    "template"
+  ],
+  "devDependencies": {
+    "@types/commander": "^2.9.1",
+    "@types/fs-extra": "^3.0.3",
+    "@types/inquirer": "^0.0.35",
+    "@types/node": "^8.0.9",
+    "@types/webpack": "^3.0.3",
+    "rimraf": "^2.6.1"
+  },
+  "dependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "chalk": "^2.4.2",
+    "commander": "^2.11.0",
+    "cross-spawn": "^5.1.0",
+    "css-loader": "^0.28.4",
+    "extract-loader": "^0.1.0",
+    "file-loader": "^0.11.2",
+    "fs-extra": "^3.0.1",
+    "inquirer": "^3.2.0",
+    "postcss-loader": "^2.1.3",
+    "precss": "^3.1.2",
+    "pug-html-loader": "^1.1.5",
+    "webpack": "^3.5.6",
+    "wets-loader": "^1.0.0",
+    "wets-tsx-loader": "^1.0.0"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "clean": "rimraf dist",
+    "prepublishOnly": "yarn run clean && yarn build",
+    "test": "jest"
+  }
+}

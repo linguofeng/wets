@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "experimentalDecorators": true,
+    "jsx": "preserve",
+    "typeRoots": [
+      "node_modules/@types",
+      "node_modules/wets-types"
+    ],
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "importHelpers": true,
+    "strict": true,
+    "lib": [
+      "dom",
+      "es2016"
+    ]
+  },
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.tsx"
+  ]
+}
