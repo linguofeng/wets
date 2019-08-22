@@ -1,0 +1,34 @@
+{
+  "name": "wets-graphql",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
+  "author": "林国锋 <linguofeng@msn.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/linguofeng/wets.git",
+    "directory": "packages/wets-graphql"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "tslint": "^5.5.0",
+    "tslint-plugin-prettier": "^1.3.0"
+  },
+  "dependencies": {
+    "@types/graphql": "^0.9.3",
+    "@types/koa-compose": "^3.2.2",
+    "graphql": "^0.10.4",
+    "graphql-tag": "^2.4.2",
+    "koa-compose": "^4.0.0"
+  },
+  "peerDependencies": {
+    "wets": "*"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "lint": "tslint -p ."
+  }
+}
