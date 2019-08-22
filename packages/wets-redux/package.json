@@ -1,0 +1,31 @@
+{
+  "name": "wets-redux",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
+  "author": "林国锋 <linguofeng@msn.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/linguofeng/wets.git",
+    "directory": "packages/wets-redux"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "jest": "^20.0.4",
+    "tslint": "^5.5.0"
+  },
+  "dependencies": {
+    "redux": "^4.0.4"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "lint": "tslint -p .",
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "wets": "*"
+  }
+}
