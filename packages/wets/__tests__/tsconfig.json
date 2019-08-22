@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "jsx": "preserve",
+    "typeRoots": [
+      "../node_modules/wets-types"
+    ]
+  },
+  "include": [
+    "."
+  ]
+}

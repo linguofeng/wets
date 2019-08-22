@@ -1,0 +1,40 @@
+{
+  "name": "wets",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "林国锋 <linguofeng@msn.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/linguofeng/wets.git",
+    "directory": "packages/wets"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "rimraf": "^2.6.1",
+    "rollup": "^0.50.1",
+    "rollup-plugin-typescript2": "^0.8.1",
+    "tslint": "^5.8.0",
+    "tslint-plugin-prettier": "^1.3.0"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "clean": "rimraf dist",
+    "lint": "tslint -p .",
+    "prepublishOnly": "yarn run clean && yarn build"
+  },
+  "dependencies": {
+    "wets-types": "^1.0.0",
+    "tslib": "^1.8.0"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "peerDependencies": {
+    "wets-types": "*"
+  }
+}

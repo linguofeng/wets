@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "es2015",
+    "declaration": true,
+    "declarationDir": "dist",
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "noUnusedLocals": true,
+    "noImplicitThis": true,
+    "moduleResolution": "node",
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "importHelpers": true
+  },
+  "include": ["src"]
+}
